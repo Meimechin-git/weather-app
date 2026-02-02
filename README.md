@@ -72,7 +72,7 @@ docker images
 
 ```
 
-> [ここに「docker images」を実行して my-weather-app が表示されている画面のスクショを貼ると評価UP]
+ ![imageの画像](/images/image.png)
 
 ### 手順③：コンテナの起動
 
