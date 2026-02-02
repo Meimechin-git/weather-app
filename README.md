@@ -1,7 +1,7 @@
 # Docker Weather App (Flask + Scraping)
 
 Dockerコンテナ上で動作する、Python製の天気予報表示アプリケーションです。
-Yahoo!天気からデータをスクレイピングし、現在の東京の天気をWebブラウザに表示します。
+Yahoo!天気からデータをスクレイピングし、現在の大阪の天気をWebブラウザに表示します。
 
 本ドキュメントは、**Windows (WSL2)** 環境において、本サーバーを構築・起動するための手順書です。
 
@@ -106,7 +106,7 @@ Windows側のWebブラウザ（Chrome, Edgeなど）を起動し、以下のURL�
 
 **URL:** [http://localhost:8080](https://www.google.com/search?q=http://localhost:8080)
 
-以下のように「東京の天気」が表示されれば、構築成功です。
+以下のように「大阪の天気」が表示されれば、構築成功です。
 
 > [サイトビュー]  
 <img src="images/siteview.png" width="400">
@@ -150,5 +150,5 @@ docker rm weather-server
 ## 6. 技術仕様（補足）
 
 * **ベースイメージ**: `python:3.10-slim` (軽量化のため採用)
-* **スクレイピング対象**: Yahoo!天気 (東京エリア)
+* **スクレイピング対象**: Yahoo!天気 (大阪エリア)
 * **拡張性**: `app.py` 内のURLを変更することで、他地域の天気も取得可能です。
